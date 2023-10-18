@@ -1,0 +1,574 @@
+/*通用类*/
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	min-width: 1200px;
+	margin: 0 auto;
+	font-size: 14px;
+	font-family: '宋体';
+}
+h1, h2, h3 {
+	font-weight: 500;
+}
+img {
+	border: none;
+}
+a {
+	cursor: pointer;
+	color: #333;
+	text-decoration: none;
+	outline: none;
+}
+a:hover {
+	color: #006bb7;
+}
+ul {
+	list-style-type: none;
+}
+.header{
+    width: 100%;
+    padding:30px 0px;
+    display: flex;
+    justify-content: center;
+}
+.logo{
+    display: flex;
+}
+.logo img{
+    width: 80px;
+    height: 80px;
+}
+.logo h1{
+    display: block;
+    margin-left: 10px;
+    margin-top: 10px;
+
+}
+.logo b{
+    font-size: 10px;
+   position: relative;
+   top: -10px;
+   left: 4px;
+}
+.logo span{
+    color: red;
+}
+.top ul{
+    display: flex;
+    font-size: 12px;
+}
+
+.end ul{
+    display: flex;
+    font-size: 12px;
+}
+.end li{
+    font-size: 16px;
+    padding: 20px;
+    font-weight: bolder;
+    margin:auto 20px ;
+}
+.end li b{
+    font-size: 40px;
+}
+.xx{
+    font-size:2px;
+    position: relative;
+    top: -22px;
+    left: 29px;
+}
+.active{
+    color: red;
+}
+.na{
+    font-size: 16px;
+    position: relative;
+    top: -13px;
+}
+.slider {
+width: 100%;
+height: 600px;
+margin: 0 auto;
+position: relative;
+overflow: hidden;
+background-color: rgb(210, 213, 193);
+}
+
+.slides {
+width: 230%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 11.5%;
+transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+width: 33.3333%;
+height: 100%;
+float: left;
+}
+
+.prev, .next {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+padding: 10px;
+border: none;
+background: transparent;
+color: white;
+font-size: 20px;
+cursor: pointer;
+}
+
+.prev {
+left: 5%;
+}
+
+.next {
+right: 5%;
+}
+
+.container{
+    width: 100%;
+}
+.title{
+    margin: 100px auto;
+    width: 1000px;
+   text-align: center;
+}
+.title span{
+    background-image: url(../images/hongdina.png);
+    background-size: cover;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+.title2{
+    margin: 100px auto;
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+}
+.title2 p{
+    background-size: cover;
+    font-size: 24px;
+    color: rgb(87, 87, 87);
+    width: 130px;
+    height: 130px;
+    line-height: 130px;
+    text-align: center;
+    margin: 0px 20px;
+}
+.title2 span{
+    font-size: 14px;
+    color: rgb(87, 87, 87);
+    position: relative;
+    top: -113px;
+}
+.b1{
+    background-image: url(../images/shuimo1.png);
+}
+.b2{
+    background-image: url(../images/shuimo2.png);
+}
+.b3{
+    background-image: url(../images/shuimo3.png);
+}
+.b4{
+    background-image: url(../images/shuimo4.png);
+}
+.images{
+    margin: 100px auto;
+    width: 1000px;
+}
+
+.images ul {
+    display: flex;
+    justify-content: center;
+}
+
+.images li{
+    margin: 0px 20px;
+}
+
+.images li img{
+    width: 200px;
+    height: 200px;
+}
+
+.xian{
+    display: flex;
+    justify-content: center;
+    margin-top: -30px;
+}
+
+.xian1{
+    width: 350px;
+    border-top: 1px solid #000;
+}
+
+.xian2{
+    margin-top: -7px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.text{
+    width: 800px;
+    font-size: 16px;
+    margin: 0px auto;
+    text-align: center;
+    color:brown;
+    line-height: 20px;
+    margin-top: -40px;
+}
+.gua{
+    width: 1000px;
+    justify-content: center;
+    display: flex;
+}
+.img{
+    width: 180px;
+    height: 217px;
+    background-image: url(../images/shange.png);
+    background-size: 180px;
+}
+.img img{
+    width: 150px;
+    margin: 15px;
+}
+.gua{
+    width: 1100px;
+    margin: 0px auto;
+}
+.gua ul {
+    display: flex;
+    justify-content: center;
+
+}
+.gua li{
+    margin: 50px 120px;
+}
+.gua_text{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.gua_text h1{
+    margin: 0px auto;
+    font-size: 32px;
+    font-weight: bolder;
+    width: 32px;
+}
+
+.gua_text div{
+    border-left:2px solid #000 ;
+    height: 80px;
+    position: relative;
+    left: -60px;
+    margin-top: 5px;
+}
+
+.hua{
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+    margin: 0px auto;
+}
+
+.tu img{
+    width: 200px;
+}
+
+.tu{
+    padding-left: 100px;
+}
+
+.lef{
+    line-height: 40px;
+}
+.rig{
+    line-height: 40px;
+    text-align: center;
+    position: relative;
+    left: 100px;
+}
+
+.footer{
+    width: 1475px;
+    margin: 0px auto;
+}
+
+.endd{
+    padding: 50px 200px;
+    background-color: #3c3041;
+    color: #fff;
+    display: flex;
+}
+
+
+.endd p{
+    margin: 25px 0px;
+    font-weight: bolder;
+}
+
+.end_left{
+    width: 40%;
+}
+.end_right{
+    width: 60%;
+}
+.end1{
+    height: 30px;
+    background-color: #000;
+}
+
+.end2{
+    height: 30px;
+    background-color: #353535;
+}
+
+
+
+.aboutUs {
+	background: url(../images/line_bg.png);
+	background-size: cover
+}
+.aboutUs .content {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center
+}
+.aboutUs ul {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin-top: 80px
+}
+.aboutUs li {
+	margin: 0 40px;
+	position: relative
+}
+.aboutUs li:hover p {
+	opacity: 1
+}
+.aboutUs li:hover img, .aboutUs li:hover p {
+	-webkit-transform: scale(1.08);
+	transform: scale(1.08)
+}
+.aboutUs li img {
+	width: 120px;
+	height: 120px
+}
+.aboutUs li p {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	position: absolute;
+	box-shadow: 0 0 0 4px #299b64;
+	opacity: 0
+}
+.aboutUs h4 {
+	width: 868px;
+	margin-top: 70px;
+	line-height: 26px
+}
+
+.news .newsBox {
+	width: 1180px;
+	margin: 0 auto
+}
+.news .title {
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start
+}
+.news .more a {
+	display: block;
+	font-size: 16px;
+	color: #299b64;
+	text-align: right;
+	-webkit-box-pack: end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+	margin-bottom: 20px
+}
+.news .video {
+	width: 548px;
+	height: 352px;
+	background: #2c2c2c;
+	margin-right: 20px
+}
+.news .newsList {
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	height: 352px
+}
+.news .newsList li {
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between
+}
+.news .newsList li, .news li {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex
+}
+.news ul {
+	width: 100%;
+	height: 100%;
+	overflow: hidden
+}
+.news li:last-child {
+	margin-bottom: 0
+}
+.news li {
+	border: 1px solid #dcd5d5;
+	margin-bottom: 10px;
+	height: 78.5px;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center
+}
+.news li:hover {
+	border-color: transparent;
+	box-shadow: 0 10px 30px -8px rgba(0,0,0,.12)
+}
+.news li:hover .el-icon-arrow-right {
+	background-color: #47db94;
+	margin-right: 20px;
+	color: #fff
+}
+.news li:hover h3 {
+	color: #299b64
+}
+.news li a {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1
+}
+.news .newsList .box {
+	margin: 15px
+}
+.news .date {
+	margin: 0 15px;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center
+}
+.news li .right {
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1
+}
+.news li .right .top {
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between
+}
+.news li .el-icon-arrow-right {
+	font-size: 22px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	margin-right: 40px;
+	color: #86858c
+}
+.transition, .transition * {
+	transition: all .36s ease
+}
+.transition img{
+    border-radius: 50%;
+}
+.wkfirst{width: 100%;padding: 80px 0;box-sizing: border-box;}
+.wkfirstcon{width: 100%;}
+.wk_1200{max-width: 1200px;margin: 0 auto;box-sizing: border-box;}
+.wkfirstcon{width: 100%;}
+.wktitle{width: 100%;margin-bottom: 40px;}
+.wktitle h4{font-size: 36px;color: #333;font-weight: bold;text-align: center;display: table;margin: 0 auto;line-height: 40px;margin-bottom: 24px;}
+.wktitle i{display: block;width: 50px;height: 4px;background: #162e5a;margin: 0 auto;}
+.wklist{width: 100%;}
+.wklist ul li{float: left;margin-right: 2%;width: 32%;margin-bottom: 2%;height: 265px;}
+.wklist ul li:nth-child(3n){margin-right: 0;}
+.wklist ul li a{display: block; overflow:hidden;text-decoration: none;height: 265px;width: 100%;}
+.wklist ul li a img{transition: all 0.6s;display: block;width: 100%;height: 100%;object-fit: cover;}
+.wklist ul li a:hover img{transform: scale(1.2);}
+.news li .right .top {
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between
+}
+.listBox li .right .bottom[data-v-07f8fc6c] {
+	margin-top: 20px;
+	line-height: 24px
+}
+.right h3{
+    font-size: 24px;
+}
+
+.right h5{
+    font-size: 18px;
+}
+
+.wrapin {
+	width: 1200px;/*公用宽度*/
+	margin-left: auto;
+	margin-right: auto;
+}
+.bre {
+	background: #2d2236;
+	margin: 20px 0;
+	padding: 10px 20px;
+}
+.bre h2 {
+	color: #fff;
+}
+.sanji {
+	margin: 30px 0;
+}
+.sanji .pic {
+	float: left;
+	width: 25%;
+}
+.sanji .text1 {
+	float: right;
+	width: 68%;
+}
+.sanji .pic img {
+	width: 100%;
+}
+.sanji .text1 p {
+	font-size: 20px;
+	color: #F00;
+	margin: 20px 0;
+}
+.sanji .text1 a {
+	width: 200px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #fff;
+	display: block;
+	font-size: 18px;
+	background: #352639 ;
+}
+.clear {
+	clear: both;
+}
